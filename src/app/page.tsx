@@ -26,7 +26,7 @@ export default function Home() {
     <NextUIProvider>
       <main className=' from-lime-300 to-orange-300 bg-gradient-to-br w-screen h-screen flex justify-center'>
         <article className=" bg-white rounded w-80 h-96 mt-10 grid justify-center p-2 justify-items-center font-sans">
-          {next ? <Canvas setNext={setNext} /> : <Start setValue={setValue} setNext={setNext} />}
+          {next ? <Canvas value={value} setNext={setNext} /> : <Start setValue={setValue} setNext={setNext} />}
         </article>
       </main>
     </NextUIProvider>
